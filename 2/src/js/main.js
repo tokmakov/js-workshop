@@ -1,0 +1,33 @@
+import modals from './modules/modals';
+import slider from './modules/slider';
+import forms from './modules/forms';
+import phones from './modules/phones';
+import names from './modules/names';
+import showMoreStyles from './modules/showMoreStyles';
+import calc from './modules/calc';
+import filter from './modules/filter';
+import pictureSize from './modules/pictureSize';
+import accordion from './modules/accordion';
+import burger from './modules/burger';
+import scrolling2 from './modules/scrolling2';
+// import scrollup from './modules/scrollup';
+import dragAndDrop from './modules/dragAndDrop';
+
+window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    modals();
+    slider('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
+    //slider('.main-slider-item', 'vertical');
+    forms();
+    phones('[name="phone"]');
+    names('[name="name"]');
+    showMoreStyles('.button-styles', '#styles .row');
+    calc('#size', '#canvas', '#option', '.promocode', '.calc-price');
+    filter();
+    pictureSize('.sizes .sizes-block');
+    accordion('#accordion .accordion-heading', '#accordion .accordion-block');
+    burger('.header .burger img', '.header .burger-menu');
+    // scrollup('.scroll-up');
+    scrolling2('.scroll-up');
+    dragAndDrop();
+});
