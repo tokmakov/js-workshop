@@ -20,7 +20,7 @@ const scrolling2 = (scrollupSelector) => {
             let hash = this.hash;
             // положение элемента относительно окна браузера в пикселях: больше нуля,
             // если элемент ниже окна браузера и меньше нуля, если элемент выше окна
-            let distWindowAnchor = document.querySelector(this.hash).getBoundingClientRect().top;
+            let distWindowAnchor = document.querySelector(hash).getBoundingClientRect().top;
             // кол-во пикселей, на которые будем прокручивать страницу на каждом шаге
             let oneStepPixels = 100;
             // кол-во шагов, которые нужны, чтобы плавно прокрутить страницу к элементу
