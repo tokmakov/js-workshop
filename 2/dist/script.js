@@ -4543,8 +4543,8 @@ window.addEventListener('DOMContentLoaded', function () {
   'use strict';
 
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  Object(_modules_slider__WEBPACK_IMPORTED_MODULE_1__["default"])('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn'); //slider('.main-slider-item', 'vertical');
-
+  Object(_modules_slider__WEBPACK_IMPORTED_MODULE_1__["default"])('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
+  Object(_modules_slider__WEBPACK_IMPORTED_MODULE_1__["default"])('.main-slider-item', 'vertical');
   Object(_modules_forms__WEBPACK_IMPORTED_MODULE_2__["default"])();
   Object(_modules_phones__WEBPACK_IMPORTED_MODULE_3__["default"])('[name="phone"]');
   Object(_modules_names__WEBPACK_IMPORTED_MODULE_4__["default"])('[name="name"]');
@@ -5387,7 +5387,7 @@ var scrolling2 = function scrolling2(scrollupSelector) {
       var hash = this.hash; // положение элемента относительно окна браузера в пикселях: больше нуля,
       // если элемент ниже окна браузера и меньше нуля, если элемент выше окна
 
-      var distWindowAnchor = document.querySelector(this.hash).getBoundingClientRect().top; // кол-во пикселей, на которые будем прокручивать страницу на каждом шаге
+      var distWindowAnchor = document.querySelector(hash).getBoundingClientRect().top; // кол-во пикселей, на которые будем прокручивать страницу на каждом шаге
 
       var oneStepPixels = 100; // кол-во шагов, которые нужны, чтобы плавно прокрутить страницу к элементу
 
