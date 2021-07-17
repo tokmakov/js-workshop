@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-анимация</title>
+    <style>
+        #block {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 0;
+            top: 0;
+            background-color: green;
+            /* анимация проигрывается два раза */
+            animation: moving 10s 2;
+        }
+        @keyframes moving {
+            0% { /* ключевой кадр, левый верхний угол */
+                left: 0;
+                top: 0;
+            }
+            25% { /* ключевой кадр, правый верхний угол */
+                left: calc(100% - 100px);
+                top: 0;
+            }
+            50% { /* ключевой кадр, правый нижний угол */
+                left: calc(100% - 100px);
+                top: calc(100% - 100px);
+            }
+            75% { /* ключевой кадр, левый нижний угол */
+                left: 0;
+                top: calc(100% - 100px);
+            }
+            100% { /* ключевой кадр, левый верхний угол */
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            block.addEventListener('animationstart', () => {
+                alert('Анимация начинается');
+            });
+            block.addEventListener('animationiteration', () => {
+                alert('Анимация второй раз');
+            });
+            block.addEventListener('animationend', () => {
+                alert('Анимация закончилась');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="block"></div>
+</body>
+</html>

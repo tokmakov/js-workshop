@@ -1,0 +1,22 @@
+section {
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+header, footer {
+    background-color: #444;
+    color: #fff;
+    padding: 15px 0;
+}
+header {
+    font-size: 26px;
+}
+footer {
+    font-size: 12px;
+}

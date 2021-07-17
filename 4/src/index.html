@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-20 mb-20">Кнопки</h2>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-dark">Dark</button>
+
+        <h2 class="mt-20 mb-20">Dropdown</h2>
+        <button class="btn btn-primary">Item one</button>
+        <button class="btn btn-primary">Item two</button>
+        <div class="dropdown" data-dropdown="true">
+            <button class="btn btn-primary dropdown-toggle">Dropdown button</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Action #1</a>
+                <a href="#" class="dropdown-item">Action #2</a>
+                <a href="#" class="dropdown-item">Action #3</a>
+            </div>
+        </div>
+        <p class="mt-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi labore deleniti iste sequi qui quidem tenetur dignissimos earum libero reprehenderit. Deserunt, cupiditate ratione incidunt nemo labore et mollitia consequuntur, explicabo vel aliquid, aspernatur consequatur natus? Deleniti sed laudantium, ipsa illum sequi sit, recusandae impedit magnam quidem beatae reprehenderit temporibus rem, a voluptas. Sed iusto corporis aut provident veniam maiores porro. Unde ut fugit, animi quae eligendi pariatur facilis impedit esse.
+        </p>
+
+        <h2 class="mt-20 mb-20">Карточки</h2>
+        <div class="cards mt-20 mb-20">
+            <div class="card">
+                <img class="card-img" src="img/card-1.jpg" alt="">
+                <div class="card-body">
+                    <div class="card-title">Карточка раз</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque placeat qui suscipit.</p>
+                    <a href="#" class="btn btn-primary">Ссылка</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="img/card-2.jpg" alt="">
+                <div class="card-body">
+                    <div class="card-title">Карточка два</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque placeat qui suscipit.</p>
+                    <a href="#" class="btn btn-primary">Ссылка</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="img/card-3.jpg" alt="">
+                <div class="card-body">
+                    <div class="card-title">Карточка три</div>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque placeat qui suscipit.
+                    </p>
+                    <a href="#" class="btn btn-primary">Ссылка</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-20 mb-20">Модальное окно</h2>
+        <button class="btn btn-primary" data-modal="true" data-target="#modal-one">Открыть окно #one</button>
+        <button class="btn btn-primary" data-modal="true" data-target="#modal-two">Открыть окно #two</button>
+        <button class="btn btn-success" id="modal-open" data-target="#modal-three">Открыть окно #three</button>
+
+        <h2 class="mt-20 mb-20">Вкладки</h2>
+        <div class="tab" data-tab="true">
+            <div class="tab-panel" data-tabpanel>
+                <div class="tab-item tab-item-active">Вкладка раз</div>
+                <div class="tab-item">Вкладка два</div>
+                <div class="tab-item">Вкладка три</div>
+            </div>
+            <div class="tab-content tab-content-active">
+                <h3>Вкладка раз</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quas expedita quibusdam voluptate laboriosam iure totam quam ut perspiciatis in nemo vitae animi consequatur impedit explicabo, pariatur officia obcaecati voluptatum?
+            </div>
+            <div class="tab-content">
+                <h3>Вкладка два</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia consequuntur labore repudiandae molestiae a nemo quisquam ipsum nobis corrupti. Cumque consectetur consequuntur ratione omnis. Dicta, ducimus et quo eius blanditiis quis, reiciendis accusantium unde accusamus pariatur veniam ipsam debitis. Ea ducimus neque eos natus modi distinctio. Ad exercitationem vel eveniet?
+            </div>
+            <div class="tab-content">
+                <h3>Вкладка три</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat accusamus, eligendi ratione mollitia quasi, culpa tenetur et alias laudantium qui, voluptatibus in! Quo quae omnis in, architecto sequi velit error, laborum quas cum soluta, quia asperiores animi unde fugiat doloremque similique eligendi autem? Provident impedit quaerat voluptate eos, illum ab optio sunt consequatur laboriosam cum aut excepturi ducimus reiciendis obcaecati? Minus enim quae saepe, reiciendis aperiam necessitatibus asperiores autem corrupti et. Dolorem laborum velit explicabo ad impedit alias.
+            </div>
+        </div>
+
+        <h2 class="mt-20 mb-20">Аккордеон</h2>
+        <div class="accordion mt-20 block-center" data-accordion="true">
+            <div class="accordion-heading accordion-heading-active">
+                Элемент раз
+            </div>
+            <div class="accordion-content accordion-content-active">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt illum veritatis, accusamus perspiciatis laboriosam totam aliquam eveniet atque eaque, nulla ab? Minima excepturi natus corporis qui! Odio labore obcaecati, consequuntur sed quasi, ex deserunt doloribus corrupti cupiditate corporis, dolores nemo eaque eius voluptatum culpa dolore! Illum esse error optio dicta reprehenderit, ut sed totam sapiente culpa ratione officia magni non aspernatur alias tempora a aliquid velit, deserunt, maxime quo aperiam?
+            </div>
+            <div class="accordion-heading">
+                Элемент два
+            </div>
+            <div class="accordion-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, corrupti. Reprehenderit distinctio nemo sequi voluptates, dolorum cupiditate maiores voluptas consequatur iste. Suscipit veniam enim dolores quas distinctio? Qui eligendi, nesciunt voluptatum cumque minima provident praesentium? Accusamus repellat reprehenderit voluptatibus corrupti, minus debitis voluptas quae nam exercitationem, laborum fuga deleniti. Aspernatur excepturi, esse, modi inventore exercitationem sequi unde, ab expedita non laborum porro cupiditate aliquid voluptatum. Non tempore illum dolores ea.
+            </div>
+            <div class="accordion-heading">
+                Элемент три
+            </div>
+            <div class="accordion-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto exercitationem sit qui nisi tenetur ea est esse deserunt totam, quis cum facere voluptatibus cumque deleniti eius similique autem sequi, doloribus nam pariatur animi non ducimus, excepturi sunt? Voluptatem sapiente perspiciatis, modi quis ex assumenda ab saepe libero commodi quas ducimus, autem, facilis culpa numquam repellat voluptates eum! Aut, adipisci laboriosam atque voluptatem velit eveniet facilis architecto quisquam cum aspernatur dignissimos!
+            </div>
+        </div>
+
+        <!-- Слайдер -->
+        <h2 class="mt-20 mb-20">Слайдер</h2>
+        <div class="carousel mt-20 mb-20">
+            <div class="carousel-window">
+                <div class="carousel-slides">
+                    <div class="carousel-item">
+                        <img src="/img/slide-1.jpg" alt="photo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/slide-2.jpg" alt="photo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/slide-3.jpg" alt="photo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/slide-4.jpg" alt="photo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/slide-5.jpg" alt="photo">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="carousel-prev">
+                <span class="carousel-prev-icon">&lt;</span>
+            </a>
+            <a href="#" class="carousel-next">
+                <span class="carousel-next-icon">&gt;</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-one">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button class="close" data-close>
+                    <span>&times;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="modal-title">
+                        Модальное окно #one
+                    </div>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsa doloremque ducimus beatae minima
+                    dignissimos ut laborum rerum nesciunt ab, debitis aliquam assumenda doloribus veritatis impedit?
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-close>Закрыть</button>
+                    <button class="btn btn-success">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-two">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button class="close" data-close>
+                    <span>&times;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="modal-title">
+                        Модальное окно #two
+                    </div>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsa doloremque ducimus beatae minima
+                    dignissimos ut laborum rerum nesciunt ab, debitis aliquam assumenda doloribus veritatis impedit?
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-close>Закрыть</button>
+                    <button class="btn btn-success">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

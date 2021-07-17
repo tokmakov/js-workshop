@@ -1,0 +1,27 @@
+.accordion {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    &-heading {
+        min-height: 50px;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        &-active {
+            color: $primary;
+        }
+    }
+    &-content {
+        padding: 10px 20px;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        display: none;
+        &-active {
+            display: block;
+        }
+    }
+    & > :first-child {
+        border-top: none;
+    }
+}
